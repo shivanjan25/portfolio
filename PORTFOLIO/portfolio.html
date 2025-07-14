@@ -1,0 +1,166 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Shivanjan Saha</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#tech">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>        
+        </ul>
+      </nav>
+    </header>
+
+    <canvas id="matrix"></canvas>
+
+    
+    <section class="hero" id="about">
+      <div class="hero-text fade-in-section fade-in-left">
+        <h2>Hello, It's Me</h2>
+        <h1>Shivanjan Saha</h1>
+        <h3>And I'm a <span class="highlight">Frontend Developer</span></h3>
+        <p class="fade-in-section fade-in-left">I'm a B.Tech Information Technology student at NSEC, Kolkata, with a strong foundation in frontend development and UI/UX design. 
+          I love turning ideas into clean, responsive, and user-friendly interfaces. Whether it's coding layouts or designing
+          in Figma, I'm always exploring new ways to make digital experiences better. Fast learner, detail-oriented, and 
+          always up for a creative challenge.</p>
+          <div class="tabtitles">
+              <p class="tablinks activelink" onclick="opentab('education')">Education</p>
+              <p class="tablinks"        onclick="opentab('interest')">Interests</p>
+              <p class="tablinks"        onclick="opentab('goals')">Goals</p>
+          </div>
+          <div class="tabcontents activetab fade-in-section fade-in-left" id="education">
+              <ul>
+                  <li><span>Maharishi Vidya Mandir School</span><br>2009-2023</li>
+                  <li><span>Netaji Subhash Chandra Engineering College</span><br>2024-2028(Ongoing)</li>
+              </ul>
+          </div>
+          <div class="tabcontents" id="interest">
+              <ul>
+                  <li><span>Machine Learning</span><br>Fascinated by data-driven intelligence and eager to build smart systems using ML models.</li>
+                  <li><span>BlockChain development</span><br>Curious about decentralized technology and how it can shape the future of secure apps.</li>
+                  <li><span>UI/UX designing</span><br>Passionate about crafting seamless and visually appealing user experiences.</li>
+                  <li><span>Arduino</span><br>Enjoy building hardware-software integrated projects with microcontrollers and sensors.</li>
+              </ul>
+          </div>
+          <div class="tabcontents" id="goals">
+              <ul>
+                  <li><span>Master Backend with Python</span><br>Exploring backend frameworks like Flask and Django to build scalable web applications.</li>
+                  <li><span>Grow as a Full Stack Developer</span><br>Strengthening both frontend and backend skills to build complete, production-ready solutions.</li>
+                  <li><span>Level Up My Graphic Design Skills</span><br>Enhancing creativity and design sense using tools like Figma, Photoshop, and Illustrator.</li>
+                  <li><span>Build More Creative Projects</span><br>Working on innovative and real-world applications to sharpen problem-solving and development skills.</li>
+              </ul>
+          </div>
+      </div>
+      <div class="hero-img">
+        <img src="imgfiles/profile.jpg" alt="Profile" />
+      </div>
+      
+    </section>
+
+
+    <section class="tech fade-in-section fade-in-bottom" id="tech">
+      <h2 class="section-title fade-in-section fade-in-bottom">Tech Stack </h2>
+      <div class="tech-stack fade-in-section fade-in-bottom">
+        <div class="tech-card"><i class="fa-brands fa-html5"></i><p>HTML5</p></div>
+        <div class="tech-card"><i class="fa-brands fa-css3-alt"></i><p>CSS3</p></div>
+        <div class="tech-card"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
+        <div class="tech-card"><i class="fa-brands fa-css3-alt"></i><p>Tailwind</p></div>
+        <div class="tech-card"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+        <div class="tech-card"><i class="fa-brands fa-figma"></i><p>Figma</p></div>
+        <div class="tech-card"><i class="fa-solid fa-database"></i><p>MongoDB</p></div>
+        <div class="tech-card"><i class="fa-solid fa-database"></i><p>SQL</p></div>
+        <div class="tech-card"><i class="fa-brands fa-react"></i><p>React.js</p></div>
+        <div class="tech-card"><i class="fa-brands fa-python"></i><p>Python</p></div>
+        <div class="tech-card"><i class="fa-brands fa-node-js"></i><p>Node.js</p></div>
+        <div class="tech-card"><i class="fa-solid fa-code"></i><p>Express.js</p></div>
+      </div>
+    </section>
+
+
+    <section class="hackathon-section fade-in-section fade-in-bottom" id="projects" >
+    <h2 class="section-title fade-in-section fade-in-bottom">Projects</h2>
+    <div class="scroll-wrapper">
+      <div class="cards-container fade-in-section fade-in-bottom">
+      
+      <a href="" target="_blank" class="card-link">
+        <div class="hack-card">
+          <h3 class="hack-title" style="color: #19a535;font-size: 1.8rem;">ATOM Mail System</h3>
+          <p class="hack-role">Frontend Developer | April 2025</p>
+          <p class="hack-desc">Atomic Mail is a powerful bulk email marketing software designed to send personalized emails to large
+            mailing lists efficiently. It supports custom templates, integrates with various SMTP servers, and provides detailed
+              analytics on delivery, open rates, and clicks. Ideal for businesses and marketers, Atomic Mail simplifies campaign
+              management while helping maintain high deliverability. We tried to develop a better and more efficient mailing system for Atom Mail
+                as part of Hackfest at IIT-Dhanbad</p>
+        </div>
+      </a>
+
+      <a href="" target="_blank" class="card-link">
+        <div class="hack-card">
+          <h3 class="hack-title" style="color: #19a535;font-size: 1.8rem;">VaxTraK</h3>
+          <p class="hack-role"> Lead Frontend Developer | April 2025</p>
+          <p class="hack-desc">VaxTrack is a smart vaccination tracking platform designed to help individuals and families manage their
+            vaccination schedules with ease. It offers features like personalized vaccine reminders, digital records, and a user-friendly
+            dashboard to monitor immunization progress. With a clean interface and intuitive design, VaxTrack aims to simplify health
+            management and ensure that no important vaccine is missed.</p>
+        </div>
+      </a>
+
+      <a href="" target="_blank" class="card-link">
+        <div class="hack-card">
+          <h3 class="hack-title" style="color: #19a535;font-size: 1.8rem;">Monezzy</h3>
+          <p class="hack-role"> Lead Frontend Developer | June 2025</p>
+          <p class="hack-desc">Monezzy is an all-in-one AI-powered personal finance assistant designed to simplify and smartly manage 
+            your money. It helps users track expenses, save towards personalized goals, get ITR filing support, and make better
+            financial decisions — all from a single, chat-based platform. With features like smart dashboards, real-time insights,
+              loan comparisons, and an AI chatbot for financial queries, Monezzy empowers individuals to understand, organize, and 
+              take control of their finances with ease and confidence.</p>
+        </div>
+      </a>
+
+    </div>
+    </div>
+    </section>
+
+
+    <section class="contact-section fade-in-section fade-in-bottom" id="contact">
+      <div class="contact-left fade-in-section fade-in-left">
+        <h2 class="fade-in-section fade-in-left">Contact Me</h2>
+        <div class="contact-info">
+          <p><i class="fas fa-paper-plane"></i> shivanjan20004@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i>+91 8584807286</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/shivanjan25"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/shivanjanhere"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/shivaaanjannnn/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/shivanjan-saha/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <a href="files/Shivanjan Resume.pdf" download="Shivanjan Resume.pdf"><button class="download-btn">Download CV</button></a>
+      </div>
+
+      <div class="contact-right fade-in-section fade-in-right">
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <script src="fade.js"></script>
+    <script src="tabchange.js"></script>
+    <script src="portfolio.js"></script>
+  </body>
+  </html>
